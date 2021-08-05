@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 196, 0);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    font-family: 'Bungee Shade', cursive;
+    color: rgb(50, 21, 218);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.title{
+    font-family: 'Monofett', cursive;
+    color: red;
+    font-size: 4rem;
+
+}
+
+.games{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#tic, #whac{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+#tic, #whac{
+      margin: 0 20px;
+  }
+
+
+.tic, .whac{
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+}
+
+
+.ticimg{
+    width: 600px;
+}
+
+.whacimg{
+    width: 475px;
+}
+
+.ticimg, .whacimg{
+      margin: 10px 0 15px;
+      border-radius: 10px;
+  }
+
+
+#play1, #play2{
+    width: 100px;
+    height: 30px;
+}
+
+.play1, .play2{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 1200px){
+    
+    body{
+        margin-top: 100px;
+        height: 100%;
+    }
+
+    header{
+
+        font-size: 2rem;
+
+    }
+
+    .ticimg{
+        width: 500px;
+    }
+    
+    .whacimg{
+        width: 375px;
+    }
+    
+  
+  }
+
+  @media screen and (max-width: 950px){
+
+    header{
+
+        font-size: 1.5rem;
+
+    }
+    .ticimg{
+        width: 400px;
+    }
+    
+    .whacimg{
+        width: 290px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 780px){
+
+    body{
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+
+    }
+
+    header{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #title{
+        margin: 0;
+    }
+
+    .title{
+        font-size: 2.6rem;
+    }
+
+    .games{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .wrap1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .wrap2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+
+    #whac{
+        margin-top: 15px;
+    }
+
+    .tic, .whac{
+        font-size: 1.5rem;
+    }
+
+    .ticimg{
+        width: 425px;
+        margin-bottom: 5px;
+    }
+    
+    .whacimg{
+        width: 320px;
+        margin-bottom: 5px;
+    }
+
+  }
+
+  @media screen and (max-width: 480px){
+
+    header{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .ticimg{
+        width: 360px;
+    }
+    
+    .whacimg{
+        width: 285px;
+    }
+
+  }
